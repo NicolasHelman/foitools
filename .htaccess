@@ -1,0 +1,10 @@
+# Protege archivos internos y publica sitemap/robots
+<Files "config.php">
+  Require all denied
+</Files>
+<Files "build-catalog.js">
+  Require all denied
+</Files>
+RewriteEngine On
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]

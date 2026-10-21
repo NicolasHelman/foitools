@@ -1,0 +1,191 @@
+/* ============================================================
+   FOI Tools Admin — tema de marca
+   Negro: #1a1a1a  |  Rojo: #CC2229
+   ============================================================ */
+
+/* ─── Variables de marca ──────────────────────────────────── */
+:root {
+    --foi-rojo:        #CC2229;
+    --foi-rojo-hover:  #a81b21;
+    --foi-rojo-suave:  rgba(204, 34, 41, 0.12);
+    --foi-negro:       #1a1a1a;
+    --foi-negro-light: #2a2a2a;
+    --bg-dark:         #1a1a1a; /* sobreescribe la var de main.css */
+}
+
+/* ─── Sidebar: fondo negro FOI ───────────────────────────── */
+.sidebar,
+.logo-header {
+    background: var(--foi-negro) !important;
+}
+
+/* ─── Sidebar: iconos y texto ────────────────────────────── */
+.sidebar .nav > .nav-item a i {
+    color: #aaa !important;
+}
+.sidebar .nav > .nav-item a p {
+    color: #ccc;
+}
+
+/* Hover */
+.sidebar .nav > .nav-item a:hover p,
+.sidebar .nav > .nav-item a:focus p {
+    color: #fff !important;
+}
+.sidebar .nav > .nav-item a:hover i,
+.sidebar .nav > .nav-item a:focus i {
+    color: var(--foi-rojo) !important;
+}
+
+/* Ítem activo */
+.sidebar .nav > .nav-item.active > a {
+    background: var(--foi-rojo-suave) !important;
+    color: #fff !important;
+}
+.sidebar .nav > .nav-item.active > a:before {
+    background: var(--foi-rojo) !important;
+}
+.sidebar .nav > .nav-item.active > a p {
+    color: #fff !important;
+}
+.sidebar .nav > .nav-item.active a i {
+    color: var(--foi-rojo) !important;
+}
+
+/* Submenú activo */
+.sidebar .nav > .nav-item.submenu > li > a i {
+    color: var(--foi-rojo) !important;
+}
+
+/* ─── Botones de toggle sidebar ──────────────────────────── */
+.logo-header .btn-toggle,
+.logo-header .more,
+.logo-header .topbar-toggler {
+    color: #ccc !important;
+}
+.logo-header .btn-toggle:hover,
+.logo-header .more:hover {
+    color: #fff !important;
+}
+
+/* ─── Topbar / main-header ───────────────────────────────── */
+.main-header .navbar-header-transparent {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+/* ─── Botones Bootstrap → rojo FOI ──────────────────────── */
+.btn-primary,
+.btn-login {
+    background: var(--foi-rojo) !important;
+    border-color: var(--foi-rojo) !important;
+    color: #fff !important;
+}
+.btn-primary:hover,
+.btn-login:hover {
+    background: var(--foi-rojo-hover) !important;
+    border-color: var(--foi-rojo-hover) !important;
+    color: #fff !important;
+}
+.btn-primary:focus,
+.btn-primary:active {
+    background: var(--foi-rojo-hover) !important;
+    border-color: var(--foi-rojo-hover) !important;
+    box-shadow: 0 0 0 0.2rem rgba(204, 34, 41, 0.35) !important;
+}
+
+/* ─── Badge info / links primarios → rojo ────────────────── */
+a.text-primary, .text-primary { color: var(--foi-rojo) !important; }
+.bg-primary { background: var(--foi-rojo) !important; }
+.border-primary { border-color: var(--foi-rojo) !important; }
+.badge.bg-primary { background: var(--foi-rojo) !important; }
+
+/* form-control focus */
+.form-control:focus {
+    border-color: var(--foi-rojo) !important;
+    box-shadow: 0 0 0 0.2rem rgba(204, 34, 41, 0.2) !important;
+}
+
+/* ─── KPI Cards ──────────────────────────────────────────── */
+.kpi-card { border-radius: 12px; border: none; }
+.kpi-card .kpi-icon { font-size: 2rem; opacity: 0.85; margin-bottom: 8px; display: block; }
+.kpi-card .kpi-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.9; margin-bottom: 4px; }
+.kpi-card .kpi-value { font-size: 2rem; font-weight: 700; margin: 0; }
+
+/* Gradientes con la paleta FOI */
+.bg-success-gradient   { background: linear-gradient(135deg, var(--foi-rojo), var(--foi-rojo-hover)) !important; }
+.bg-info-gradient      { background: linear-gradient(135deg, #2a2a2a, #444) !important; }
+.bg-secondary-gradient { background: linear-gradient(135deg, #555, #333) !important; }
+.bg-danger-gradient    { background: linear-gradient(135deg, var(--foi-rojo), #8b0000) !important; }
+
+/* ─── Login ──────────────────────────────────────────────── */
+/* Fondo rojo FOI para la página de login */
+.wrapper.wrapper-login {
+    background: linear-gradient(135deg, var(--foi-rojo) 0%, var(--foi-rojo-hover) 100%) !important;
+}
+
+/* Card blanca sobre el fondo rojo */
+.wrapper.wrapper-login .container-login:not(.container-transparent) {
+    background: #fff !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25) !important;
+}
+
+/* Textos del encabezado oscuros (sobre fondo blanco) */
+.wrapper.wrapper-login .login-heading h4 {
+    color: var(--foi-negro) !important;
+    font-weight: 700;
+}
+.wrapper.wrapper-login .login-heading p {
+    color: #666 !important;
+}
+
+/* Inputs sobre fondo blanco */
+.wrapper.wrapper-login .container-login .login-form .form-floating input {
+    background: #f7f7f7;
+    border-color: #ddd;
+    color: var(--foi-negro);
+}
+.wrapper.wrapper-login .container-login .login-form .form-floating label {
+    color: #666;
+}
+
+/* Botón de login: negro para contrastar con la card blanca */
+.wrapper.wrapper-login .container-login .btn-login {
+    background: var(--foi-negro) !important;
+    border-color: var(--foi-negro) !important;
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+.wrapper.wrapper-login .container-login .btn-login:hover {
+    background: #333 !important;
+    transform: translateY(-1px);
+}
+
+/* ─── Modal header coloreado ──────────────────────────────── */
+.modal-header-coloreado .modal-title,
+.modal-header-coloreado .btn-close-white { color: #fff !important; }
+
+/* ─── DataTables: botones de exportación ─────────────────── */
+.dt-buttons { display: inline-flex; gap: 6px; flex-wrap: wrap; margin-right: 16px; }
+.dt-buttons .btn { margin: 0 !important; }
+.dataTables_length { display: inline-block; }
+
+/* ─── Toggle filtros (chevron colapsable) ────────────────── */
+.icono-toggle-filtros {
+    transition: transform 0.3s ease;
+}
+.toggle-filtros[aria-expanded="true"] .icono-toggle-filtros {
+    transform: rotate(180deg);
+}
+
+/* ─── Toggle password ─────────────────────────────────────── */
+.toggle-password {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    z-index: 5;
+}

@@ -1,0 +1,16 @@
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/scrollbar.js"></script>
+<script src="assets/js/bootstrap-notify.js"></script>
+<script src="assets/js/sweetalert.js"></script>
+<script src="assets/js/main.js?v=1"></script>
+<script src="assets/js/select2.js"></script>
+<script src="assets/js/pdfmake.js"></script>
+<script src="assets/js/pdfmake_vfs_fonts.js"></script>
+<script src="assets/js/xlsx.js"></script>
+<script src="assets/js/jquery.dataTables.min.js"></script>
+<script src="assets/js/buttons.dataTables.min.js"></script>
+<script src="assets/js/buttons.colvis.dataTables.min.js"></script>
+<script src="assets/js/fixedHeader.dataTables.min.js"></script>
+<script src="assets/js/rowgroup.dataTables.min.js"></script>
+<script src="assets/js/admin-custom.js?v=1"></script>
